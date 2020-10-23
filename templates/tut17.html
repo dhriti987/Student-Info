@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600&display=swap" rel="stylesheet"> 
+    <style>
+        *{
+            font-family: 'Baloo Da 2', cursive;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 900px;
+            border: 2px solid blue;
+            margin: 33px auto;
+            background-color: #ebb0eb;  
+        }
+        .items{
+            border:2px solid rebeccapurple;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: aqua;
+        }
+        #fruits{
+            float: left;
+            width: 49%;
+            height: 310px;
+        }
+        #computer{
+            float: right;
+            width: 49%;
+        }
+        #stationary{
+            /* float: left; */
+            width: 100%;
+            clear: both;
+        }
+        #glasses{
+            /* float: left; */
+            width: 100%;
+            clear: both;
+        }
+        p{
+            text-align: center;
+            text-align: justify;
+        }
+        h2{
+            text-align: center;
+        }
+        
+        h1{
+            margin: auto;
+            width: 249px;
+            border: 2px solid rebeccapurple;
+            background-color: antiquewhite;
+        }
+        
+            
+            
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>THIS IS MY STORE</h1>
+        <div id="fruits" class="items">
+            <h2>FRUITS</h2>
+            <p id="fruitsPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores pariatur quaerat aliquam quam eum eo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam repellat, incidunt eveniet laudantium provident ab totam magni quo eligendi ad qui vel. Placeat, molestiae autem. Maiores, tempore. Eos, odio?</p>
+            
+        </div>
+        <div id="computer" class="items">
+            <h2>COMPUTER</h2>
+            <p id="comPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores pariatur quaerat aliquam quam eum eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis cumque rerum magnam. Hic aliquam nisi rem sed repellendus. Quis mollitia cupiditate reprehenderit enim consequatur aliquam ipsum magni accusamus asperiores explicabo?</p>
+            
+        </div>
+        <div id="stationary" class="items">
+            <h2>STATIONRY</h2>
+            <p id="statPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores pariatur quaerat aliquam quam eum eos.</p>
+            
+        </div>
+        <div id="glasses" class="items">
+            <h2>STATIONRY</h2>
+            <p id="glassesPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores pariatur quaerat aliquam quam eum eos.</p>
+            
+        </div>
+    </div>
+</body>
+</html>
