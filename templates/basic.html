@@ -1,0 +1,52 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/basics.css' %}">
+    
+    
+    
+</head>
+
+<body>
+    <nav class="navbar" id="mynav">
+        <div class="brand-title">STUDENT INFO.</div>
+        <a href="#" class="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">PROFILE</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </div>
+    </nav>
+    <footer class="foot">
+        <div class="container">
+            <h2>KNOWLEDGE IS POWER</h2>
+            <div class="follow">
+                
+                <H3>FOLLOW US ON:</H3>
+                <a href="https://instagram.com" target="_blank"><img src={% static 'png/001-instagram.png' %} alt=""></a>
+                <a href="#"><img src={% static 'png/002-facebook.png' %} alt=""></a>
+                <a href="#"><img src={% static 'png/003-linkedin.png' %} alt=""></a>
+                <a href="#"><img src={% static 'png/004-twitter.png' %} alt=""></a>
+                <a href="#"><img src={% static 'png/005-github.png' %} alt=""></a>
+            </div>
+            <p>&COPY;STUDENT INFO 2020-21 | ALL RIGHTS RESERVED </p>
+        </div>
+        
+    </footer>
+</body>
+
+<script type="text/javascript" src={% static 'js/basics.js' %}></script>
+</html>
