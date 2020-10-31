@@ -5,6 +5,7 @@ from django.db import models
 class Student(models.Model):
     Student_id = models.AutoField(primary_key=True)
     Admission_no = models.IntegerField()
+    Student_photo = models.ImageField(upload_to='Profile_Pic')
     Student_name = models.CharField(max_length=50)
     Father_name = models.CharField(max_length=50)
     Mother_name = models.CharField(max_length=50)
@@ -15,7 +16,18 @@ class Student(models.Model):
     Student_Phone = models.CharField(max_length=15)
     Student_Email = models.EmailField()
     Student_gender = models.CharField(max_length=15)
-    Student_photo = models.ImageField(upload_to='Profile_Pic')
+
 
     def __str__(self):
         return self.Student_name
+
+
+class Announcement(models.Model):
+    Title=models.CharField(max_length=100)
+    Date=models.DateField()
+    Description=models.CharField(max_length=500)
+    Image=models.ImageField(upload_to="announcement")
+    
+    
+    def __str__(self):
+        return self.Title
