@@ -7,18 +7,19 @@ body {
     padding: 0px;
 }
 
+/* navigation bar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(20, 15, 15);
     color: aliceblue;
+    /* position: fixed; */
+    width: 100%;
+
 }
 
-.brand-title {
-    font-size: 2rem;
-    margin: 0.5rem;
-}
 
 .navbar-links ul {
     margin: 0px;
@@ -40,7 +41,7 @@ body {
 
 .navbar-links li:hover {
     background-color: gray;
-
+    
 }
 
 .toggle {
@@ -61,6 +62,12 @@ body {
     border-radius: 10px;
 }
 
+/* title */
+
+.brand-title {
+    font-size: 2rem;
+    margin: 0.5rem;
+}
 @media(max-width: 840px) {
     .toggle {
         display: flex;
@@ -111,9 +118,4 @@ body {
         text-align: center;
 
     }
-}
-.foot{
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
 }

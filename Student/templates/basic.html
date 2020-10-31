@@ -6,7 +6,7 @@
     <title>{% block title %} {% endblock %}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/basics.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar_footer.css' %}">
     {% block head %} {% endblock %}
     
 
@@ -25,13 +25,14 @@
         <div class="navbar-links">
             <ul>
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">CONTACT US</a></li>
                 <li><a href="#">PROFILE</a></li>
                 <li><a href="#">NEWS</a></li>
-                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">ANNOUNCEMENT</a></li>
+                <li><a href="#">CONTACT US</a></li>
             </ul>
         </div>
     </nav>
+    {% block body %} {% endblock %}
     <footer class="foot">
         <div class="container">
             <h2>KNOWLEDGE IS POWER</h2>
@@ -48,7 +49,7 @@
         </div>
         
     </footer>
-    {% block body %} {% endblock %}
+    
 </body>
 
 <script type="text/javascript" src={% static 'js/basics.js' %}></script>
