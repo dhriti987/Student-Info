@@ -24,7 +24,7 @@
     margin: 18px 7px;
     border-radius: 10px;
     background: url('{% static "png/bg2.jpg" %}') no-repeat center center/cover;
-    opacity: 0.8;
+    opacity: 0.6;
     
 }
 .slider{
@@ -65,22 +65,19 @@
     <h1>NEWS</h1>
     <div class="services">
         <div class="box">
-            <h2 class="center">THIS IS NEWS</h2>
-            <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas praesentium aliquam
-                atque facilis quam eveniet alias tempore laudantium dolorem tenetur?</p>
-            <button class="btn">READ MORE</button>
+            <h2 class="center">{{News.3.title}}</h2>
+            <p class="center">{{News.3.desc}}</p>
+            <button class="btn"><a href="{{News.3.link}}">READ MORE</a></button>
         </div>
         <div class="box">
-            <h2 class="center">THIS IS NEWS</h2>
-            <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas praesentium aliquam
-                atque facilis quam eveniet alias tempore laudantium dolorem tenetur?</p>
-            <button class="btn">READ MORE</button>
+            <h2 class="center">{{News.4.title}}</h2>
+            <p class="center">{{News.4.desc}}</p>
+            <button class="btn"><a href="{{News.4.link}}">READ MORE</a></button>
         </div>
         <div class="box">
-            <h2 class="center">THIS IS NEWS</h2>
-            <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas praesentium aliquam
-                atque facilis quam eveniet alias tempore laudantium dolorem tenetur?</p>
-            <button class="btn">READ MORE</button>
+            <h2 class="center">{{News.5.title}}</h2>
+            <p class="center">{{News.5.desc}}</p>
+            <button class="btn"><a href="{{News.5.link}}">READ MORE</a></button>
         </div>
 
     </div>
