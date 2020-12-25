@@ -24,9 +24,16 @@
     margin: 18px 7px;
     border-radius: 10px;
     background: url('{% static "png/bg2.jpg" %}') no-repeat center center/cover;
-    opacity: 0.6;
-    
 }
+.box p{
+    font-weight: bolder;
+}
+    
+    
+    
+    
+
+
 .slider{
     width: 100%;
     height: 570px;
@@ -64,20 +71,20 @@
 <section id="service-container">
     <h1>NEWS</h1>
     <div class="services">
-        <div class="box">
+        <div class="box" id="box1">
             <h2 class="center">{{News.3.title}}</h2>
             <p class="center">{{News.3.desc}}</p>
             <button class="btn"><a href="{{News.3.link}}">READ MORE</a></button>
         </div>
-        <div class="box">
+        <div class="box" id="box2">
             <h2 class="center">{{News.4.title}}</h2>
             <p class="center">{{News.4.desc}}</p>
             <button class="btn"><a href="{{News.4.link}}">READ MORE</a></button>
         </div>
-        <div class="box">
+        <div class="box" id="box3">
             <h2 class="center">{{News.5.title}}</h2>
             <p class="center">{{News.5.desc}}</p>
-            <button class="btn"><a href="{{News.5.link}}">READ MORE</a></button>
+            <button class="btn" ><a href="{{News.5.link}}">READ MORE</a></button>
         </div>
 
     </div>
